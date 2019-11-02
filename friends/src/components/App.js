@@ -7,6 +7,7 @@ import Signin from './Signin'
 import Account from './Account'
 import Logout from './Logout'
 import Add from './Add'
+import FriendDetails from './FriendDetails'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
 			<ProtectedRoute exact path='/account' component={Account}/>
 			<ProtectedRoute exact path='/logout' component={Logout}/>
 			<ProtectedRoute exact path='/add' component={Add}/>
+			<ProtectedRoute exact path='/friend/:id' component={FriendDetails}/>
 		</div>
 	)
 }
