@@ -39,7 +39,7 @@ export default function FriendDetails(props) {
                <div className="card">
                    <p>{friends.name}</p>
                    <p>{friends.email}</p>
-                   <button onClick={() => {deleteFriend()}}>Delete</button>
+                   <button onClick={deleteFriend}>Delete</button>
                </div>
                ) : <p>loading..</p> }
         </>
