@@ -27,7 +27,7 @@ function Signin(props) {
 			})
 			.catch(err => {
 				console.log(err)
-				// setError(err.response.data.message)
+				setError(err)
 			})
     }
     	
