@@ -6,7 +6,7 @@ export default function Friend({friend}) {
     return (
         <Link to={`friend/${friend.id}`} friend={friend}>
             <div className="card">
-                {friend.name}
+                <h3>{friend.name}</h3>
             </div>
         </Link>
         

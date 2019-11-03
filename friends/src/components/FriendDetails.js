@@ -38,7 +38,7 @@ export default function FriendDetails(props) {
         <>
            {friends ? (
                <div className="card">
-                   <p>{friends.name}</p>
+                   <h3>{friends.name}</h3>
                    <p>{friends.email}</p>
                    <button onClick={deleteFriend}><i className="fas fa fa-trash"/></button>
                    <Link to={`/edit/${friends.id}`} friends={friends}><i className="fas fa fa-edit"/></Link>
