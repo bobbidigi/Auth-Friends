@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from 'react'
+import {Link} from 'react-router-dom'
 import api from '../utils/api'
 import Friend from './Friend'
 
@@ -20,9 +21,13 @@ export default function Account(props) {
 
     return (
         <div>
+            <div className="header">
             <h1>My Friends Account</h1>
+            <Link to="/add"><i className="fas fa fa-plus"/></Link>
+            </div>
+            
          {friends ? friends.map((item,index) => {
-            return < Friend friend={item} key={index}/>}) : <p>loading..</p> }  
+            return < Friend friend={item} key={index}/>}) : <i className="fas fa-circle-notch fa-7x" /> }  
         </div>
     )
 }

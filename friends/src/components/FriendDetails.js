@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import {Link} from 'react-router-dom'
 import api from '../utils/api'
 
 export default function FriendDetails(props) {
@@ -39,9 +40,10 @@ export default function FriendDetails(props) {
                <div className="card">
                    <p>{friends.name}</p>
                    <p>{friends.email}</p>
-                   <button onClick={deleteFriend}>Delete</button>
+                   <button onClick={deleteFriend}><i className="fas fa fa-trash"/></button>
+                   <Link to={`/edit/${friends.id}`} friends={friends}><i className="fas fa fa-edit"/></Link>
                </div>
-               ) : <p>loading..</p> }
+               ) : <p><i className="fas fa-circle-notch fa-7x" /></p> }
         </>
     )
 }
