@@ -65,3 +65,23 @@ button {
 button:hover {
 	opacity: 0.7;
 }
+
+.card{
+	border: 1px solid darkgray;
+	display: flex;
+	width: 400px;
+	border-radius: 5px;
+	justify-content: space-between;
+	margin: 1px auto;
+	align-items: center;
+	padding: 5px;
+	background: rgb(76, 76, 223);
+	color: #fff;
+	transition: all 0.5s ease;
+  }
+.card:hover {
+	opacity: 0.7;
+}
+  .card h1, .card p{
+	margin: 0;
+  }
